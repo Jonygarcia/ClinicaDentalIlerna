@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #3366cc;
+    --navbar-color: #c9d7f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+div {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+}
+
+.logo-navbar {
+    height: 70px;
+    width: auto;
+}
+
+.line-separator {
+    color: var(--primary-color);
+}
+
+.img-about {
+    max-height: 270px;
+    width: auto;
+}
+
+.title {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.bg-section {
+
+    background-color: var(--navbar-color);
+}
+
+.service-icon {
+    height: 40px;
+}
+
+.bg-footer{
+    background-color: var(--primary-color);
+}
+
