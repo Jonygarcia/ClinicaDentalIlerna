@@ -161,7 +161,6 @@
     </section>
 
     <section id="services">
-        <!-- Clinic -->
         <div class="container-fluid justify-content-center pt-3 pb-5 mt-4">
             <div class="container text-center">
                 <div class="row justify-content-center text-center">
@@ -260,9 +259,23 @@
                 </div>
             </div>
             <div class="container-fluid col-md-6 justify-content-center text-center align-content-center">
-                <form id="contactForm" action="#" method="POST">
+                <form id="contactForm" action="" method="POST">
 
                     <div class="row">
+
+                        <div id="nameCheck" class="alert alert-danger" role="alert" hidden>
+                            El nombre debe contener entre 4 y 30 caracteres
+                        </div>
+                        <div id="emailCheck" class="alert alert-danger" role="alert" hidden>
+                            Debes indicar un email correcto
+                        </div>
+                        <div id="reasonCheck" class="alert alert-danger" role="alert" hidden>
+                            El motivo debe contener entre 4 y 30 caracteres
+                        </div>
+                        <div id="messageCheck" class="alert alert-danger" role="alert" hidden>
+                            El mensaje debe contener como mínimo 10 caracteres
+                        </div>
+
                         <div class="form-floating mb-3 col-12 col-md-4">
                             <input class="form-control" id="name" type="text" name="name" placeholder="Nombre"
                                 data-sb-validations="required" value="" required />
@@ -271,7 +284,7 @@
 
                         <div class="form-floating mb-3 col-12 col-md-8">
                             <input class="form-control" id="email" type="email" name="email" placeholder="Email"
-                                data-sb-validations="required" value="" />
+                                data-sb-validations="required" value="" required />
                             <label for="email" class="mx-2">Email<span class="text-danger">*</span></label>
                         </div>
                     </div>
@@ -279,7 +292,7 @@
                     <div class="row">
                         <div class="form-floating mb-3 col-12 col-md-12">
                             <input class="form-control" id="reason" type="text" name="reason" placeholder="Motivo"
-                                data-sb-validations="required" value="" />
+                                data-sb-validations="required" value="" required />
                             <label for="reason" class="mx-2">Motivo<span class="text-danger">*</span></label>
                         </div>
                     </div>
@@ -290,14 +303,13 @@
                     </div>
 
                     <div class="row mt-4 d-grid justify-content-center">
-                        <button type="submit" disabled class="btn btn-primary btn-lg">
+                        <button id="contactFormSubmit" type="submit" disabled class="btn btn-primary btn-lg">
                             Enviar
                         </button>
                     </div>
                 </form>
             </div>
         </div>
-
     </section>
 
     <section id="location">

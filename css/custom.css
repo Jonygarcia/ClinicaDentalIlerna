@@ -47,11 +47,10 @@ div {
     height: 40px;
 }
 
-.bg-footer{
+.bg-footer {
     background-color: var(--primary-color);
 }
 
-.hidden-content{
+.hidden-content {
     opacity: 0;
 }
-

@@ -39,7 +39,57 @@ $(".nav-title").mouseover(function () {
 
 // Mouseleave on navbar links
 $(".nav-title").mouseleave(function () {
-    $(this)
-        .removeClass("text-primary-emphasis")
-        .addClass("text-dark-emphasis");
+    $(this).removeClass("text-primary-emphasis").addClass("text-dark-emphasis");
+});
+
+// Form validation
+let namePattern = "^[a-zA-Z]{4,30}$";
+let emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$";
+
+function checkInput(idInput, pattern) {
+    if ($(idInput).val().match(pattern)) {
+        $(idInput + "Check").attr("hidden", "true");
+        return true;
+    } else {
+        $(idInput + "Check").removeAttr("hidden");
+        return false;
+    }
+}
+
+function checkTextarea(idText) {
+    let value = $(idText).val();
+    if (value.length >= 10) {
+        $(idText + "Check").attr("hidden", "true");
+        return true;
+    } else {
+        $(idText + "Check").removeAttr("hidden");
+        return false;
+    }
+}
+
+function enableSubmit() {
+    $("#contactFormSubmit").removeAttr("disabled");
+}
+
+function disableSubmit() {
+    $("#contactFormSubmit").attr("disabled", "disabled");
+}
+
+function checkForm(idForm) {
+    $(idForm + " *").change(function () {
+        if (
+            checkInput("#name", namePattern) &&
+            checkInput("#email", emailPattern) &&
+            checkInput("#reason", namePattern) &&
+            checkTextarea("#message")
+        ) {
+            enableSubmit();
+        } else {
+            disableSubmit();
+        }
+    });
+}
+
+jQuery(function () {
+    checkForm("#contactForm");
 });
