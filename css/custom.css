@@ -51,3 +51,7 @@ div {
     background-color: var(--primary-color);
 }
 
+.hidden-content{
+    opacity: 0;
+}
+

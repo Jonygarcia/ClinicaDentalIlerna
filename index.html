@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- * ICO -->
     <link rel="shortcut icon" href="img/logoico.ico" type="image/x-icon">
+    <!-- * JQUERY -->
+    <script defer type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
     <!-- * CUSTOM -->
     <link rel="stylesheet" href="css/custom.css">
-    <script defer src="js/custom.js"></script>
+    <script defer type="text/javascript" src="./js/custom.js"></script>
     <!-- * BOOTSTRAP -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <!-- * MDB -->
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -29,7 +31,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0">
+    <nav class="navbar navbar-expand-lg sticky-top shadow-0">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo" class="logo-navbar"></a>
             <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
@@ -41,17 +43,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarExample01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link px-3" href="#about-us">Sobre nosotros</a>
+                    <li class="nav-item active mt-2">
+                        <a class="text-dark-emphasis px-3 nav-title" href="#">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="#services">Servicios</a>
+                    <li class="nav-item active mt-2">
+                        <a class="text-dark-emphasis px-3 nav-title" href="#about-us">Sobre nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="#contact">Contacto</a>
+                    <li class="nav-item mt-2">
+                        <a class="text-dark-emphasis px-3 nav-title" href="#services">Servicios</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link px-3" href="#location">¿Dónde estamos?</a>
+                    <li class="nav-item mt-2">
+                        <a class="text-dark-emphasis px-3 nav-title" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="text-dark-emphasis px-3 nav-title" href="#location">¿Dónde estamos?</a>
                     </li>
                 </ul>
             </div>
@@ -104,13 +109,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-0 justify-content-center py-3">
+            <div class="row g-0 justify-content-center py-3 hidden-content">
                 <div class="col-md-3 px-4 pb-4 pb-md-0">
                     <img src="img/img-about.jpg" class="img-fluid img-about" alt="Espejo dental">
                 </div>
                 <div class="col-md-3 px-4">
-                    <div class="">
-                        <p class="">En Clínica Dental Ilerna cuidamos de tu salud bucodental. Formamos un
+                    <div>
+                        <p>En Clínica Dental Ilerna cuidamos de tu salud bucodental. Formamos un
                             equipo humano altamente cualificado y en constante progreso que trabaja utilizando las
                             técnicas más avanzadas para conseguir pacientes satisfechos con sonrisas sanas y bonitas.
                             Nuestros valores son el rigor y la integridad. Creemos en la prevención y en la importancia
@@ -168,54 +173,54 @@
             </div>
             <div class="container col-md-9">
                 <div class="row">
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos1.jpg" alt="ATM" class="service-icon"> ATM</h6>
                         <p>Dolores de cabeza, bruxismo o desgaste de piezas son algunos de los problemas derivados de la
                             disfunción de la articulación temporomandibular.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos2.jpg" alt="IMPLANTES" class="service-icon"> IMPLANTES DENTALES
                         </h6>
                         <p>La mejor solución para la restitución de piezas perdidas.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos3.jpg" alt="ESTÉTICA" class="service-icon"> ESTÉTICA DENTAL</h6>
                         <p>Los tratamientos más avanzados para lucir una sonrisa sana y blanca. Carillas,
                             blanqueamientos, prótesis, una solución personaliza para cada caso.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos4.jpg" alt="ODONTOPEDIATRÍA" class="service-icon"> ODONTOPEDIATRÍA
                         </h6>
                         <p>Los métodos y tratamientos de prevención y corrección durante la niñez garantizarán una mejor
                             salud bucodental para los adultos del futuro.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos5.jpg" alt="ORTODONCIA" class="service-icon"> ORTODONCIA</h6>
                         <p>Invisible, con brackets, existen alternativas diferentes en ortodoncia para corregir y
                             mejorar los defectos e irregularidades en la posición de los dientes.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos6.jpg" alt="PRÓTESIS" class="service-icon"> PRÓTESIS</h6>
                         <p>De tipo fijo o removible, las prótesis ofrecen una solución perfecta para reponer dientes y
                             muelas ausentes, mejorando la estética, la masticación y el habla.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos7.jpg" alt="PERIODONCIA" class="service-icon"> PERIODONCIA</h6>
                         <p>La prevención, el diagnóstico y el tratamiento de encías contribuye a conservar la salud y
                             función de las piezas dentales.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos8.jpg" alt="ORTODONCIA CONSERVADORA" class="service-icon">
                             ORTODONCIA CONSERVADORA
                         </h6>
                         <p>Su objetivo es curar y mantener las piezas y el tejido sano para garantizar una perfecta
                             salud bucodental.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos9.jpg" alt="HIGIENE DENTAL" class="service-icon"> HIGIENE DENTAL
                         </h6>
                         <p>Una o dos veces al año conviene visitar al especialista en higiene dental para evitar la
@@ -223,18 +228,18 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos10.jpg" alt="CIRUGÍA ORAL" class="service-icon"> CIRUGÍA ORAL
                         </h6>
                         <p>La extracción de muelas del juicio o la regeneración de hueso son algunas de las prácticas
                             más habituales en cirugía oral.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos11.jpg" alt="ENDODONCIAS" class="service-icon"> ENDODONCIAS</h6>
                         <p>Se trata de realizar extracciones de la pulpa infectada del diente para dejar éste lo más
                             limpio y aséptico posible.</p>
                     </div>
-                    <div class="container my-3 col-md-3">
+                    <div class="container my-3 col-md-3 hidden-content">
                         <h6><img src="img/icons/iconos12.jpg" alt="PREVENCIÓN" class="service-icon"> PREVENCIÓN</h6>
                         <p>La prevención es el elemento clave para el mantenimiento de una correcta salud bucodental.
                             Revisiones anuales y hábitos de higiene son las palabras clave.</p>
@@ -244,8 +249,7 @@
         </div>
     </section>
 
-    <section id="contact" class="">
-
+    <section id="contact">
         <div class="container-fluid justify-content-center pt-3 pb-5 mt-4">
             <div class="container text-center">
                 <div class="row justify-content-center text-center">
@@ -286,7 +290,7 @@
                     </div>
 
                     <div class="row mt-4 d-grid justify-content-center">
-                        <button type="submit" class="btn btn-primary btn-lg">
+                        <button type="submit" disabled class="btn btn-primary btn-lg">
                             Enviar
                         </button>
                     </div>
@@ -348,7 +352,7 @@
                 </div>
             </div>
             <div class="text-center p-3 text-white bg-footer">
-                © 2023 Copyright:<a class="text-white" href="#">ClinicaDentalIlerna.com</a>
+                © 2023 Copyright:<a class="text-white" href="#"> ClinicaDentalIlerna.com</a>
             </div>
         </footer>
     </section>
